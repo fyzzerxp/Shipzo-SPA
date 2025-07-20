@@ -45,7 +45,7 @@ function App() {
             <div>
               <h1 className="text-5xl lg:text-6xl font-bold text-white mb-6">
                 Your Favorite
-                <span className="text-teal block">Forwarder</span>
+                <span className="text-[#7FD0BD] block">Forwarder</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
                 Fast, transparent, and cost-effective logistics solutions backed by 14+ years of international expertise across the Middle East and beyond.
