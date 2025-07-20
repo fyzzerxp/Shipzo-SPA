@@ -569,10 +569,9 @@ function App() {
             <div>
               <h4 className="font-semibold mb-4">Coverage Areas</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>United Arab Emirates</li>
-                <li>Qatar</li>
-                <li>Saudi Arabia</li>
-                <li>Bahrain</li>
+                <li>Middle East</li>
+                <li>Europe</li>
+                <li>Africa</li>
                 <li>Global Routes</li>
               </ul>
             </div>
