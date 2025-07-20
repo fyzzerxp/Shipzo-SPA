@@ -138,12 +138,29 @@ function App() {
               </div>
             </div>
             
-            <div className='grid grid-cols-2 gap-6 items-center'>
-              <img className='h-48 transition-transform duration-700 hover:scale-105' src="/10.png" alt="About Shipzo"/>
-              <img className='transition-transform duration-700 hover:scale-105' src="/2.jpg" alt="About Shipzo"/>
-             <img className='max-h-50 transition-transform duration-700 hover:scale-105' src="/8.jpg" alt="About Shipzo"/>
-            <img className='h-52 transition-transform duration-700 hover:scale-105' src="/7.jpg" alt="About Shipzo"/>
-            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center">
+  <img
+    className="w-full h-48  transition-transform duration-700 hover:scale-105"
+    src="/10.png"
+    alt="About Shipzo"
+  />
+  <img
+    className="w-full h-48  transition-transform duration-700 hover:scale-105"
+    src="/2.jpg"
+    alt="About Shipzo"
+  />
+  <img
+    className="w-full h-52  transition-transform duration-700 hover:scale-105"
+    src="/8.jpg"
+    alt="About Shipzo"
+  />
+  <img
+    className="w-full h-52  transition-transform duration-700 hover:scale-105"
+    src="/7.jpg"
+    alt="About Shipzo"
+  />
+</div>
+
           </div>
 
          
@@ -160,12 +177,12 @@ function App() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
                 
             
-                <div className="relative order-2 lg:order-1">
-                    <div className="relative overflow-hidden rounded-3xl shadow-2xl group">
+                <div className="relative order-1 ">
+                    <div className="relative  overflow-hidden rounded-3xl shadow-2xl group">
                         <img 
                             src="/02.jpeg" 
                             alt="Shipzo logistics operations" 
-                            className="w-full h-76 sm:h-[26rem] lg:h-[30rem] object-cover object-[25%_80%] object- transition-transform duration-700 group-hover:scale-105"
+                            className="w-full h-76 sm:h-[18rem] lg:h-[30rem] object-cover object-[25%_80%] object- transition-transform duration-700 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
@@ -252,7 +269,7 @@ function App() {
                             </ul>
                         
                         </div>
-                    </div>
+                </div>
                 </div>
                 
             </div>
