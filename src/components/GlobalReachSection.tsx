@@ -36,15 +36,12 @@ export default function GlobalReachSection() {
         </div>
 
         {/* World Map Section */}
-        <div className="relative mb-12 sm:mb-16 ">
+        <div className="relative mb-12 sm:mb-14 ">
           <Card className="bg-gradient-to-br from-slate-900 via-slate-700 to-slate-900 border backdrop-blur-sm shadow-2xl">
-            <CardContent className="lg:p-6">
+            <CardContent className="p-4 lg:p-6">
               <div
-                className="relative  h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden rounded-lg bg-cover bg-center bg-no-repeat"
-                style={{
-                  backgroundImage: `url('/map3.png')`,
-                  backgroundSize: "70%",
-                }}
+                className="custom-bg relative h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden rounded-lg bg-center bg-no-repeat"
+               
               >
                 {/* Hub Points */}
                 {hubs.map((hub, index) => (

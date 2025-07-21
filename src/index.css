@@ -165,10 +165,6 @@ p {
   }
 }
 
-
-
-
-
 @layer base {
   * {
     @apply border-border;
@@ -177,3 +173,23 @@ p {
     @apply bg-background text-foreground;
   }
 }
+
+.custom-bg {
+  background-image: url('/map3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%; /* Default for mobile */
+}
+
+@media (min-width: 640px) {
+  .custom-bg {
+    background-size: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .custom-bg {
+    background-size: 70%;
+  }
+}
+

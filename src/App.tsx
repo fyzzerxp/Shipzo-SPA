@@ -23,7 +23,7 @@ function App() {
               <a href="#services" className="text-gray-700 hover:text-teal transition-colors">Services</a>
               <a href="#contact" className="text-gray-700 hover:text-teal transition-colors">Contact</a>
             </div>
-            <button className="bg-teal text-white px-6 py-2 rounded-lg hover:bg-teal-dark transition-colors">
+            <button onClick={() => window.location.href = "#contact"}  className="bg-teal text-white px-6 py-2 rounded-lg hover:bg-teal-dark transition-colors">
               Get Quote
             </button>
           </div>
@@ -55,10 +55,10 @@ function App() {
                 Fast, transparent, and cost-effective logistics solutions backed by 14+ years of international expertise across the Middle East and beyond.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-teal text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-teal-dark transition-colors">
+                <button onClick={() => window.location.href = "#contact"} className="bg-teal text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-teal-dark transition-colors">
                   Get Started
                 </button>
-                <button className="border-2 border-teal text-teal px-8 py-3 rounded-lg text-lg font-semibold hover:bg-teal hover:text-white transition-colors">
+                <button onClick={() => window.location.href = "#services"} className="border-2 border-teal text-teal px-8 py-3 rounded-lg text-lg font-semibold hover:bg-teal hover:text-white transition-colors">
                   Learn More
                 </button>
               </div>
@@ -108,7 +108,7 @@ function App() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">About Shipzo</h2>
             <p className="text-xl text-gray-500 max-w-3xl mx-auto">
-              Founded in 2025, Shipzo is a dynamic freight forwarding and logistics company built on over 14 years of international industry expertise.
+            Shipzo is a UAE based modern logistics and freight forwarding company committed to simplifying global shipping. With smart solutions, reliable service, and a customer-first approach, we help businesses move goods quickly and efficiently across borders. Whether it’s air, sea, or land we make shipping seamless.
             </p>
           </div>
           
