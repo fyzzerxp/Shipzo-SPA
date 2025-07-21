@@ -24,7 +24,7 @@ export default function GlobalReachSection() {
           >
             Global Network
           </Badge>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-black mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-4xl xl:text-6xl font-bold text-black mb-4 sm:mb-6 leading-tight">
             Connecting the World
             <span className="block text-teal">Through Logistics</span>
           </h2>
