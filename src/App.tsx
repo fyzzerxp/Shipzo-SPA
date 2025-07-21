@@ -1,6 +1,7 @@
 import React from 'react';
 import { Ship, Plane, Truck, FileCheck, Globe, Package, Phone, Mail, MapPin, Clock, Users, Award } from 'lucide-react';
 import ParallaxComponent from './components/ParallaxContactSection';
+import GlobalReachSection from './components/GlobalReachSection';
 
 
 function App() {
@@ -11,8 +12,11 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
            
-          
-              <img className='w-28' src="/logo.jpg" alt="" />
+      
+              <div className='flex items-center'>
+                <img className='w-16' src="/logo-ship.png" alt="" />
+                <h1 className='font-bold'>SHIP<span className='text-teal'>ZO</span></h1>
+              </div>
            
             <div className="hidden md:flex space-x-8">
               <a href="#about" className="text-gray-700 hover:text-teal transition-colors ">About</a>
@@ -112,7 +116,7 @@ function App() {
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-6">Global Logistics Excellence</h3>
               <p className="text-gray-500 mb-6 leading-relaxed">
-                With deep operational experience across Bahrain, Qatar, Saudi Arabia, and the UAE, as well as global trade routes involving the USA, UK, China, and beyond, we understand the complexities of modern logistics.
+                With deep operational experience across Middle East, as well as global trade routes involving the USA, UK, China, and beyond, we understand the complexities of modern logistics.
               </p>
               <p className="text-gray-500 mb-8 leading-relaxed">
                 Our mission is to provide fast, transparent, and cost-effective logistics that keep your business moving forward. Backed by strong global networks and a customer-first approach, we are committed to delivering every shipment with care, precision, and reliability.
@@ -187,12 +191,7 @@ function App() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                    
-                    <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-gray-100 hidden sm:block">
-                        <div className="text-center">
-                            <div className="text-3xl font-bold text-teal-600">14+</div>
-                            <div className="text-sm text-gray-500">Years Experience</div>
-                        </div>
-                    </div>
+                   
                 </div>
                 
             
@@ -219,7 +218,7 @@ function App() {
                                         </svg>
                                     </div>
                                     <span className="text-lg leading-relaxed group-hover:text-teal-100 transition-colors duration-300">
-                                        14+ years of international logistics expertise
+                                    Free consultation and quote
                                     </span>
                                 </li>
                                 
@@ -277,7 +276,7 @@ function App() {
         </section>
 
       {/* Services Section */}
-      <section id="services" className="py-20 bg-gray-50">
+      <section id="services" className="relative py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Core Services</h2>
@@ -390,9 +389,11 @@ function App() {
             </div>
           </div>
         </div>
+       
       </section>
 
-     
+     {/* Global Reach */}
+        <GlobalReachSection/>
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gray-50">
@@ -426,7 +427,7 @@ function App() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-500">info@shipzo.com</p>
+                    <p className="text-gray-500">info@shipzo.ae</p>
                     <p className="text-sm text-gray-500">Quick response guaranteed</p>
                   </div>
                 </div>
@@ -437,7 +438,7 @@ function App() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Service Areas</h4>
-                    <p className="text-gray-500">UAE, Qatar, Saudi Arabia, Bahrain</p>
+                    <p className="text-gray-500">Middle East</p>
                     <p className="text-sm text-gray-500">Global trade routes worldwide</p>
                   </div>
                 </div>
@@ -549,7 +550,7 @@ function App() {
                 </div>
                 <div className="text-sm">
                   <p className="font-semibold mb-1">Email:</p>
-                  <p className="text-gray-300">info@shipzo.com</p>
+                  <p className="text-gray-300">info@shipzo.ae</p>
                 </div>
               </div>
             </div>
