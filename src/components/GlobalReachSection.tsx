@@ -24,11 +24,11 @@ export default function GlobalReachSection() {
           >
             Global Network
           </Badge>
-          <h2 className="text-4xl xl:text-6xl font-bold text-black mb-4 sm:mb-6 leading-tight">
+          <h2 className="text-4xl font-bold text-black mb-4 sm:mb-6 leading-tight">
             Connecting the World
             <span className="block text-teal">Through Logistics</span>
           </h2>
-          <p className="text-base sm:text-lg lg:text-xl text-gray-500 max-w-2xl lg:max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
+          <p className="text-base stext-xl text-gray-500 max-w-2xl lg:max-w-3xl mx-auto leading-relaxed px-4 sm:px-0">
             Our extensive global network ensures your cargo reaches every corner
             of the world with speed, reliability, and precision. From air
             freight to ocean shipping, we've got you covered.
@@ -36,9 +36,9 @@ export default function GlobalReachSection() {
         </div>
 
         {/* World Map Section */}
-        <div className="relative mb-12 sm:mb-16">
+        <div className="relative mb-12 sm:mb-16 ">
           <Card className="bg-gradient-to-br from-slate-900 via-slate-700 to-slate-900 border backdrop-blur-sm shadow-2xl">
-            <CardContent className="p-4 sm:p-6 lg:p-8">
+            <CardContent className="lg:p-6">
               <div
                 className="relative  h-64 sm:h-80 md:h-96 lg:h-[500px] xl:h-[600px] overflow-hidden rounded-lg bg-cover bg-center bg-no-repeat"
                 style={{
