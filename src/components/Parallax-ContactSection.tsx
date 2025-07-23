@@ -36,7 +36,7 @@ export default function ParallaxComponent() {
             <Button
               size="lg"
               className="bg-white hover:bg-gray-100 text-gray-900 px-6 py-3 text-base font-semibold rounded-md transition-all duration-300 transform hover:scale-105 shadow-lg"
-              onClick={() => window.open("https://wa.me/1234567890", "_blank")}
+              onClick={() => window.open("https://wa.me/971544263686?text=Hi")}
             >
               <MessageCircle className="w-5 h-5 mr-2" />
               Get in Touch

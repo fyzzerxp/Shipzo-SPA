@@ -1,34 +1,21 @@
-import React from 'react';
+
 import { Ship, Plane, Truck, FileCheck, Globe, Package, Phone, Mail, MapPin, Clock, Users, Award } from 'lucide-react';
-import ParallaxComponent from './components/ParallaxContactSection';
-import GlobalReachSection from './components/GlobalReachSection';
+import ParallaxComponent from './components/Parallax-ContactSection';
+import GlobalReachSection from './components/GlobalReach-Section';
+import ContactSection from './components/Contact-Section';
+import Footer from './components/partial/Footer';
+import Header from './components/partial/Header';
+import WhatsAppFloatingButton from './components/WhatsApp-Floater-Button';
 
 
 function App() {
   return (
     <div className="min-h-screen bg-white font-montserrat">
+
+    <WhatsAppFloatingButton />
+
       {/* Navigation */}
-      <nav className="fixed top-0 w-full min-h-[40px] bg-white/95 backdrop-blur-sm shadow-sm z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-           
-      
-              <div className='flex items-center'>
-                <img className='w-16' src="/logo-ship.png" alt="" />
-                <h1 className='font-bold'>SHIP<span className='text-teal'>ZO</span></h1>
-              </div>
-           
-            <div className="hidden md:flex space-x-8">
-              <a href="#about" className="text-gray-700 hover:text-teal transition-colors ">About</a>
-              <a href="#services" className="text-gray-700 hover:text-teal transition-colors">Services</a>
-              <a href="#contact" className="text-gray-700 hover:text-teal transition-colors">Contact</a>
-            </div>
-            <button onClick={() => window.location.href = "#contact"}  className="bg-teal text-white px-6 py-2 rounded-lg hover:bg-teal-dark transition-colors">
-              Get Quote
-            </button>
-          </div>
-        </div>
-      </nav>
+     <Header/>
 
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-20 pb-16 bg-gradient-to-br from-green-50 to-indigo-100 mt-20">
@@ -52,7 +39,7 @@ function App() {
                 <span className="text-[#7FD0BD] block">Forwarder</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 leading-relaxed">
-                Fast, transparent, and cost-effective logistics solutions backed by 14+ years of international expertise across the Middle East and beyond.
+                Fast, transparent, and cost-effective logistics solutions backed by a decade of international expertise across the Middle East and beyond.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <button onClick={() => window.location.href = "#contact"} className="bg-teal text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-teal-dark transition-colors">
@@ -395,194 +382,11 @@ function App() {
      {/* Global Reach */}
         <GlobalReachSection/>
 
-      {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Get In Touch</h2>
-            <p className="text-xl text-gray-500 max-w-3xl mx-auto">
-              Ready to streamline your logistics? Contact our expert team for personalized freight solutions.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-8">Contact Information</h3>
-              
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center">
-                    <Phone className="h-6 w-6 text-teal" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Phone</h4>
-                    <p className="text-gray-500">+971 544263686</p>
-                    <p className="text-sm text-gray-500">24/7 Support Available</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-green-100 w-12 h-12 rounded-lg flex items-center justify-center">
-                    <Mail className="h-6 w-6 text-green-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Email</h4>
-                    <p className="text-gray-500">info@shipzo.ae</p>
-                    <p className="text-sm text-gray-500">Quick response guaranteed</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="bg-orange-100 w-12 h-12 rounded-lg flex items-center justify-center">
-                    <MapPin className="h-6 w-6 text-orange-600" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900">Service Areas</h4>
-                    <p className="text-gray-500">Middle East</p>
-                    <p className="text-sm text-gray-500">Global trade routes worldwide</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl">
-                <h4 className="font-bold text-gray-900 mb-3">Why Contact Us?</h4>
-                <ul className="text-sm text-gray-500 space-y-2">
-                  <li>✓ Free consultation and quote</li>
-                  <li>✓ Expert advice on logistics solutions</li>
-                  <li>✓ Customized service packages</li>
-                  <li>✓ Competitive pricing</li>
-                </ul>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 p-8 rounded-xl">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Request a Quote</h3>
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="Your full name"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Company</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="Company name"
-                    />
-                  </div>
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                    <input 
-                      type="email" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="your@email.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
-                    <input 
-                      type="tel" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                      placeholder="+971 XXX XXXXXX"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Service Required</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                    <option>Select service type</option>
-                    <option>Air Freight</option>
-                    <option>Sea Freight (FCL)</option>
-                    <option>Sea Freight (LCL)</option>
-                    <option>GCC Road Transport</option>
-                    <option>Customs Clearance</option>
-                    <option>Cross Trade</option>
-                    <option>Project Cargo</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                  <textarea 
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                    placeholder="Tell us about your shipping requirements..."
-                  ></textarea>
-                </div>
-
-                <button 
-                  type="submit"
-                  className="w-full bg-teal text-white py-3 px-6 rounded-lg font-semibold hover:bg-teal-dark transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+     {/* Contact Section */}
+        <ContactSection/>
 
       {/* Footer */}
-      <footer className="bg-[#3f5e5a] text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <div className="flex items-center space-x-2 mb-4">
-                
-                <span className="text-2xl font-bold">Shipzo</span>
-              </div>
-              <p className="text-gray-300 mb-6 max-w-md">
-                Your favorite forwarder with 14+ years of international logistics expertise. Fast, transparent, and cost-effective solutions for all your freight needs.
-              </p>
-              <div className="flex space-x-4">
-                <div className="text-sm">
-                  <p className="font-semibold mb-1">Phone:</p>
-                  <p className="text-gray-300">+971 544263686</p>
-                </div>
-                <div className="text-sm">
-                  <p className="font-semibold mb-1">Email:</p>
-                  <p className="text-gray-300">info@shipzo.ae</p>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Services</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>Air Freight</li>
-                <li>Sea Freight</li>
-                <li>GCC Road Transport</li>
-                <li>Customs Clearance</li>
-                <li>Cross Trade</li>
-                <li>Project Cargo</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-semibold mb-4">Coverage Areas</h4>
-              <ul className="space-y-2 text-gray-300">
-                <li>Middle East</li>
-                <li>Europe</li>
-                <li>Africa</li>
-                <li>Global Routes</li>
-              </ul>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-300">
-            <p>&copy; 2025 Shipzo Freight Services LLC. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+     <Footer/>
     </div>
   );
 }
