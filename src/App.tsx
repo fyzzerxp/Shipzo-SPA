@@ -94,7 +94,7 @@ function App() {
 
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">About Shipzo</h2>
-            <p className="text-xl text-gray-500 max-w-3xl mx-auto">
+            <p className=" text-gray-500 max-w-3xl mx-auto">
             Shipzo is a UAE based modern logistics and freight forwarding company committed to simplifying global shipping. With smart solutions, reliable service, and a customer-first approach, we help businesses move goods quickly and efficiently across borders. Whether it’s air, sea, or land we make shipping seamless.
             </p>
           </div>
