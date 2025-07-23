@@ -17,10 +17,11 @@ export default function Header() {
           <a href="#about" className="text-gray-700 hover:text-teal transition-colors ">About</a>
           <a href="#services" className="text-gray-700 hover:text-teal transition-colors">Services</a>
           <a href="#contact" className="text-gray-700 hover:text-teal transition-colors">Contact</a>
+          <img className="w-6 h-6  " src="/uae-flag.png" alt="UAE" />
         </div>
         <div className="flex items-center gap-3">
            
-            <img className="w-6 h-6 me-2 border-gray-300" src="/uae-flag.png" alt="UAE" />
+            
             <button
               onClick={() => (window.location.href = "#contact")}
               className="bg-teal  text-white px-6 py-2 rounded-lg hover:bg-teal-700 transition-colors"
