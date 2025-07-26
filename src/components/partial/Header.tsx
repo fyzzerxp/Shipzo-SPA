@@ -4,11 +4,11 @@ export default function Header() {
   return (
     <nav className="fixed top-0 w-full min-h-[40px] bg-white/95 backdrop-blur-sm shadow-sm z-50">
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div className="flex justify-between items-center py-2">
+      <div className="flex justify-between items-center">
        
   
           <div className='flex items-center'>
-            <img className='w-16' src="/logo-ship.png" alt="" />
+            <img className='w-24' src="/logo-ship.png" alt="" />
             <h1 className='font-bold text-xl'>SHIP<span className='text-teal '>ZO</span></h1>
            
           </div>
