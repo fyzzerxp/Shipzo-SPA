@@ -3,6 +3,7 @@ import { Mail, MapPin, Phone } from 'lucide-react'
 import React from 'react'
 
 
+
 interface FormErrors {
   name?: string;
   email?: string;
@@ -15,6 +16,9 @@ export default function ContactSection() {
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [errors, setErrors] = React.useState<FormErrors>({});
   const [touched, setTouched] = React.useState<Record<string, boolean>>({});
+
+  const accessKey = import.meta.env.VITE_ACCESS_KEY;
+  
 
   // Validation functions
   const validateName = (name: string): string | undefined => {
@@ -139,7 +143,7 @@ export default function ContactSection() {
     // Create the final object to send with access_key included
     const submitData = {
       ...formObject,
-      access_key: "17d270e4-f8e9-4cf7-a796-9d2e591a1eb1"
+      access_key: accessKey
     };
 
     try {
@@ -159,7 +163,7 @@ export default function ContactSection() {
       }
     } catch (error) {
       console.error("Error:", error);
-      setResult("Failed to send message. Please try again.");
+      setResult("Failed to send message. Check all fields and please try again.");
     } finally {
       setIsLoading(false);
     }
