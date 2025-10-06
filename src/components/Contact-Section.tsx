@@ -111,7 +111,7 @@ export default function ContactSection() {
     const form = e.target as HTMLFormElement;
     const formData = new FormData(form);
     
-    // Convert FormData to object for validation (excluding access_key)
+    // Convert FormData to object for validation 
     const formObject: Record<string, string> = {};
     formData.forEach((value, key) => {
       if (key !== 'access_key') {
