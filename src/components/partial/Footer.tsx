@@ -16,7 +16,7 @@ export default function Footer() {
               <div className="flex space-x-4">
                 <div className="text-sm">
                   <p className="font-semibold mb-1">Phone:</p>
-                  <p className="text-gray-300">+971 544263686</p>
+                  <p className="text-gray-300">+971 581368182</p>
                 </div>
                 <div className="text-sm">
                   <p className="font-semibold mb-1">Email:</p>

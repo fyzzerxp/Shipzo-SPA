@@ -190,7 +190,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-500">+971 544263686</p>
+                  <p className="text-gray-500">+971 581368182</p>
                   <p className="text-sm text-gray-500">24/7 Support Available</p>
                 </div>
               </div>
